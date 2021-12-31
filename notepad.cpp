@@ -135,7 +135,7 @@ void Notepad::exit()
 void Notepad::copy(){
 #if QT_CONFIG(clipboard)
     ui->textEdit->copy();
-   #endif
+#endif
 }
 
 void Notepad::cut(){
@@ -184,8 +184,8 @@ void Notepad::setFontBold(bool bold)
 
 void Notepad::about()
 {
-   QMessageBox::about(this, tr("About MDI"),
-                tr("The <b>Notepad</b> example demonstrates how to code a basic "
-                   "text editor using QtWidgets"));
+    QMessageBox::about(this, tr("About MDI"),
+                       tr("The <b>Notepad</b> example demonstrates how to code a basic "
+                          "text editor using QtWidgets"));
 
 }

@@ -4,3 +4,4 @@ moc_predefs.h
 moc_notepad.cpp
 ui_notepad.h
 *core
+notepad.app
