@@ -1,0 +1,6 @@
+*.o
+qrc_notepad.cpp
+moc_predefs.h
+moc_notepad.cpp
+ui_notepad.h
+*core

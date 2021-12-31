@@ -164,3 +164,28 @@ void Notepad::selectFont(){
     if(fontSelected)
         ui->textEdit->setFont(font);
 }
+
+
+void Notepad::setFontUnderline(bool underline)
+{
+    ui->textEdit->setFontUnderline(underline);
+}
+
+void Notepad::setFontItalic(bool italic)
+{
+    ui->textEdit->setFontItalic(italic);
+}
+
+void Notepad::setFontBold(bool bold)
+{
+    bold ? ui->textEdit->setFontWeight(QFont::Bold) :
+           ui->textEdit->setFontWeight(QFont::Normal);
+}
+
+void Notepad::about()
+{
+   QMessageBox::about(this, tr("About MDI"),
+                tr("The <b>Notepad</b> example demonstrates how to code a basic "
+                   "text editor using QtWidgets"));
+
+}
